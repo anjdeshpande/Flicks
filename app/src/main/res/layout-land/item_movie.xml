@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5ff9e7">
+
+    <ImageView
+        android:id="@+id/ivBackdropImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_widthPercent="60%"
+        android:adjustViewBounds="true"
+        android:layout_alignParentTop="true"
+        tools:src="@mipmap/ic_launcher"
+        />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="26sp"
+        android:layout_toRightOf="@id/ivBackdropImage"
+        app:layout_widthPercent="40%"
+        tools:text="Captain America: Civil War"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/tvDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ivBackdropImage"
+        android:layout_below="@id/tvName"
+        app:layout_widthPercent="40%"
+        tools:text="Following the events of Age of Ultron, the collective governments of the world pass an act designed to regulate all superhuman activity. This polarizes opinion amongst the Avengers, causing two factions to side with Iron Man or Captain America, which causes an epic battle between former allies."
+        android:textColor="#0b1010"
+        android:allowUndo="false"
+        android:ellipsize="end"
+        android:lines="8"
+        android:linksClickable="false"
+        android:paddingEnd="5dp"
+        android:paddingStart="5dp" />
+
+    </android.support.percent.PercentRelativeLayout>
